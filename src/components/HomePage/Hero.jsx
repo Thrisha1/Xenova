@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div>
       <section className="min-h-[600px] flex justify-center">
-        <div className="flex-col pt-10 gap-10 justify-center bg-[#101010] mx-2 from-[#86fde8] mt-0 to-[#acb6e5] overflow-hidden flex rounded-b-2xl shadow-lg p-5 align-middle items-stretch h-auto md:flex-row">
+        <div className="flex-col pt-10 gap-10 justify-center bg-[#101010]  from-[#86fde8] mt-0 to-[#acb6e5] overflow-hidden flex rounded-b-2xl shadow-lg p-5 align-middle items-stretch h-auto md:flex-row">
           <div className="md:w-1/2 flex justify-center">
             <Image loading="lazy" className="w-3/4 mx-auto md:mx-0" src={heroimg} alt="hero"/>
           </div>

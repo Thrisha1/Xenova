@@ -6,6 +6,7 @@ import {ClipboardIcon} from "@heroicons/react/outline";
 import dummyimg from '../../public/dummyimg.png'
 
 
+
 const Referral = () => {
     return (
 
@@ -27,8 +28,8 @@ const Referral = () => {
                 </div>
                 <button className="bg-gray-900 text-[#D3E853] text-sm rounded-xl py-1 px-4">Invite</button>
             </div>
-
             
+
                 
         </div>
 

@@ -14,10 +14,10 @@ const Ad_card = ({imageSrc,desc,Amt,link}) => {
                 Login daily to win Exciting Prizes
             </div>
 
-            <div className="flex">
+            <div className="flex ">
                 {/* right image */}
-                <div className="flex justify-center items-center pl-2">
-                    <Image className='w-[19rem]' src={imageSrc} alt="ad" />
+                <div className="flex justify-center items-center pl-2 h-full mt-2">
+                    <Image className='rounded-lg' width={150} height={150} src={imageSrc} alt="ad" />
                 </div>
 
                 {/* left side */}
@@ -31,7 +31,7 @@ const Ad_card = ({imageSrc,desc,Amt,link}) => {
                     {/* a horizontal line with gray colour with visble width */}
                     <hr className='w-11/12 text-center flex justify-center my-2 ml-2 bg-gray-800 p-[.05rem] ' />
                     <div className="flex w-full justify-center items-center">
-                        <button onClick={() => router.push(link)} className='flex gap-2 items-center justify-center bg-black text-[#DCE95B] px-3 font-bold py-1 rounded-full'>
+                        <button onClick={() => router.push(link)} className='flex gap-2 items-center justify-center bg-black text-[#DCE95B] px-3 font-bold py-1 rounded-full text-sm'>
                             <Image className='w-5 h-5' src={WhatsApp} alt='WhatsApp' />
                             SHARE LINK
                         </button>

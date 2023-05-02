@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
 import { useState } from 'react';
@@ -8,6 +9,7 @@ import Banner from '../../components/profile/Banner_profile.jsx'
 import bg from '../../public/bg black.png'
 import UserCard from '../../components/profile/UserCard.jsx'
 import Details from '../../components/profile/Details.jsx'
+import down_arrow from '../../public/statement/down_arrow.png'
 
 const page = () => {
   // const [startDate, setStartDate] = useState(new Date());
@@ -26,6 +28,9 @@ const page = () => {
         <Details/>
         
       </div>
+      <div className="w-full flex items-center justify-center m-3">
+          <Image src={down_arrow} width="70" height="70" />
+        </div>
       </div>
       <div className="my-2 flex flex-col h-64 justify-between px-4">
           <h1 className="text-green-500">MORE LINKS</h1>
