@@ -1,10 +1,15 @@
+"use client";
 import React from 'react'
 import cardbg from '../../public/cardbg.png'
 import {CheckCircleIcon} from "@heroicons/react/outline";
-
+import { decrement, increment, reset } from "@/redux/features/counterSlice";
+import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 
 const UserCard = () => {
+    const counter = useAppSelector((state) => state.counter);
+    const dispatch = useAppDispatch();
     return (
+
 
         <div className="max-w-sm p-2 h-[8rem] justify-between bg-gradient-to-r from-[#8AD863] via-[#D6F19A] to-[#D3E853] rounded-xl ">
 
@@ -16,8 +21,8 @@ const UserCard = () => {
             </div>
 
             <div className="my-2">
-                <h5 className="mx-2 text-lg font-bold tracking-widest">THRISHA KANNAN</h5>
-                <h5 className="text-xs font tracking-wider px-2">thrishakannan25@gmail.com</h5>
+                <h5 className="mx-2 text-lg font-bold tracking-widest">{counter.name}</h5>
+                <h5 className="text-xs font tracking-wider px-2">{counter.email}</h5>
             </div>
             <div className="bg-black h-[1px] w-3/4 mx-7"></div>
             <div className="flex items-center justify-between my-2">

@@ -1,3 +1,6 @@
+"use client"
+import React from 'react';
+import { Providers } from "@/redux/provider";
 import Header from '../components/Header.jsx'
 // import Footer from '../components/Footer.jsx'
 import Footer_common from "../components/Footer_common.jsx"
@@ -16,10 +19,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className=" ">
         <ApolloProvider client={client}>
-          <Header />
-          {children}
-          <Footer_common />
-          </ApolloProvider>
+          <Providers>
+            <Header />
+            {children}
+            <Footer_common />
+          </Providers>
+        </ApolloProvider>
       </body>
     </html>
   )
