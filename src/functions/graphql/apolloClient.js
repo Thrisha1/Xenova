@@ -30,7 +30,7 @@ const retryLink = new RetryLink({
 })
 
 const httpLink = new HttpLink({
-  uri: "https://localhost:8080/v1/graphql"
+  uri: process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT
 })
 
 const authLink = new ApolloLink((operation, forward) => {
