@@ -23,12 +23,23 @@ const RecentAds = () => {
             </div>
             <div className='flex gap-10 overflow-x-scroll'>
 
+                {/* display a message that there are no ads currently available in a bold format */}
                 {
-                    adShow.map(ad =>
-                        <AdsCard id={ad.id} image={ad.image} title={ad.description} amt={ad.amt} />
-                    )
+                    adShow.length > 0 
+                    
+                    ?
+                    
+                        (adShow.map(ad =>
+                            <AdsCard id={ad.id} image={ad.image} title={ad.description} amt={ad.amt} />
+                        )) 
+                        
+                    :
+
+                    (<div className="md:w-1/2 flex-col">
+                        <h1 className="text-white text-2xl font-medium">No ads currently available</h1>
+                    </div>)
                 }
-                
+
             </div>
             <Link href="/all-ads" class="block w-full mt-6 text-center text-lg font-bold text-yellow-200">View All Ads</Link>
             <h1 className="text-gray-400 text-md mt-4 text-center flex justify-center">

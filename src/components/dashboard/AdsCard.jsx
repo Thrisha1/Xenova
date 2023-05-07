@@ -5,7 +5,7 @@ import React from 'react'
 const AdsCard = ({id, image, title, amt }) => {
     return (
         <div class="min-w-[16rem] bg-gradient-to-bl from-yellow-200 from-0% via-[#D3E854] via-60% to-black to-100%border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex-col justify-center items-center">
-            <Link href={`/dashboard/3#top_side`}>
+            <Link href={`/dashboard/${id}`}>
                 <Image class="rounded-t-lg w-full p-3" width={200} height={200} src={image} alt="" />
             </Link>
             <div class="p-5 flex-col justify-center items-center w-full text-center">
