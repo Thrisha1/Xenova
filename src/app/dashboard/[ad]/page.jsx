@@ -1,12 +1,11 @@
 import React from 'react'
-import Hero from "@/components/HomePage/Hero";
-import Dashboard from '@/components/dashboard/Dashboard';
 import Ad_detail from '@/components/ad-details/Ad_detail';
 
-const page = () => {
+const page = ({params}) => {
+
   return (
     <div>
-      <Ad_detail/>
+      <Ad_detail adId={params.ad} />
     </div>
   )
 }

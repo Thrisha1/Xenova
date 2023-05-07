@@ -9,13 +9,18 @@ import Youtube from "../public/Youtube.png";
 import Twitter from "../public/twitter.png";
 
 const Footer = () => {
+
+  const messageDrop = () => {
+    alert("Drop Us a Message")
+  }
+
   return (
     <div className="bg-[#101010] h-72 rounded-t-3xl flex flex-col items-center justify-between py-3">
       <div className="">
         <h1 className="text-white text-center text-2xl tracking-wider">Got any Doubts?</h1>
       </div>
       <div className="flex items-center justify-center">
-        <button className="bg-[#E5F358] p-2 rounded-xl flex"><ChatIcon className="h-6 w-6 mx-2"/>Drop Us a Message</button>
+        <Link href="https://wa.me/9447156765"  className="bg-[#E5F358] p-2 rounded-xl flex"><ChatIcon className="h-6 w-6 mx-2"/>Drop Us a Message</Link>
       </div>
     <div className="text-white text-center">
       <div className="text-white mb-2">Terms</div>

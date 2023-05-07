@@ -4,8 +4,9 @@ import React from 'react'
 import WhatsApp from '../public/images/whatsapp.svg'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'; 
+import Link from 'next/link';
 
-const Ad_card = ({imageSrc,desc,Amt,link}) => {
+const Ad_card = ({imageSrc,desc,Amt,link,adId}) => {
     const router = useRouter();
 
     return (
@@ -16,22 +17,22 @@ const Ad_card = ({imageSrc,desc,Amt,link}) => {
 
             <div className="flex ">
                 {/* right image */}
-                <div className="flex justify-center items-center pl-2 h-full mt-2">
-                    <Image className='rounded-lg' width={150} height={150} src={imageSrc} alt="ad" />
-                </div>
+                <Link href={`/dashboard/${adId}`} className="flex w-3/5 justify-center items-center pl-2 mt-2 mr-2">
+                    <Image className='rounded-lg' width={300} height={300} src={imageSrc} alt="ad" />
+                </Link>
 
                 {/* left side */}
-                <div className="flex-col justify-center items-center">
-                    <div className='mt-4'>
+                <div className="flex-col w-2/3 justify-center items-center mt-3">
+                    <Link href={`/dashboard/${adId}`} className='mt-2'>
                         <h1 className='text-sm text-center'>{desc}</h1>
-                    </div>
-                    <h2 className="text-black text-center font-semibold text-lg tracking-wider">
-                        Earn upto ₹ <span className="font-bold text-3xl">{Amt}</span>
-                    </h2>
+                    </Link>
+                    <Link href={`/dashboard/${adId}`} className="text-black font-bold text-center  text-lg tracking-wider">
+                        Earn upto ₹ <span className=" text-2xl">{Amt}</span>
+                    </Link>
                     {/* a horizontal line with gray colour with visble width */}
                     <hr className='w-11/12 text-center flex justify-center my-2 ml-2 bg-gray-800 p-[.05rem] ' />
                     <div className="flex w-full justify-center items-center">
-                        <button onClick={() => router.push(link)} className='flex gap-2 items-center justify-center bg-black text-[#DCE95B] px-3 font-bold py-1 rounded-full text-sm'>
+                        <button onClick={() => router.push(link)} className='flex gap-2 items-center justify-center bg-black text-[#DCE95B] px-4 font-bold py-2 rounded-full text-sm'>
                             <Image className='w-5 h-5' src={WhatsApp} alt='WhatsApp' />
                             SHARE LINK
                         </button>
