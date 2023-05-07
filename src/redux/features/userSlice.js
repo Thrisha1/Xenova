@@ -2,7 +2,6 @@ import { createSlice } from "@reduxjs/toolkit";
 
 
 const initialState = {
-    value: 0,
     user_details: {
         name: "John Doe",
         email: "john@gmail.com",
@@ -11,6 +10,13 @@ const initialState = {
         mobile: "+91",
         pincode: "123456",
         gender: "",
+        shared_ads_amount:"",
+        referrals_amount:"",
+        total_amount:"",
+        redeemed_amount:"",
+        pending_amount:"",
+        shared_ads:[],
+        referrals:[],
     },
   };
   
