@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ['localhost','img.freepik.com'],
+    domains: ['localhost','img.freepik.com','upload.wikimedia.org'],
   },
   // basePath: '/',
 }
