@@ -15,7 +15,7 @@ const initialState = {
         id: 2,
         title: "Ad 2",
         description: 'Eid is a digital advertising platform that helps you find the right ad for your business.',
-        image: "https:.freepik.com/free-vector/realistic-eid-mubarak-greeting-card_1017-31239.jpg?w=2000",
+        image: "https://img.freepik.com/free-vector/realistic-eid-mubarak-greeting-card_1017-31239.jpg?w=2000",
         amt: 200,
         link:"https://www.google.co.in/"
     },

@@ -7,7 +7,7 @@ import Ad3 from '../../public/images/ad3.svg';
 const More_Ads = ({ads}) => {
     return (
         <div className='my-5 bg-white py-8 flex-col justify-center items-center'>
-            <div id='moreAds' class="rounded-lg mb-4 text-center">
+            <div class="rounded-lg mb-4 text-center">
                 <h1 class="text-xl font-bold text-black">MORE ADS</h1>
             </div>
             <div className='flex flex-col gap-5 px-5'>
