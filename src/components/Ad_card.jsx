@@ -5,13 +5,15 @@ import WhatsApp from '../public/images/whatsapp.svg'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'; 
 import Link from 'next/link';
+import { sharedAds,fetchContacts } from '../redux/features/userSlice';
+import { useAppDispatch } from '../redux/hooks.jsx';
 
 const Ad_card = ({imageSrc,desc,Amt,link,adId}) => {
     const router = useRouter();
+    const dispatch = useAppDispatch();
 
     const handleClick = () => {
         router.push(`/dashboard/${adId}`)
-
     }
 
     return (
@@ -37,7 +39,7 @@ const Ad_card = ({imageSrc,desc,Amt,link,adId}) => {
                     {/* a horizontal line with gray colour with visble width */}
                     <hr className='w-11/12 text-center flex justify-center my-2 ml-2 bg-gray-800 p-[.05rem] ' />
                     <div className="flex w-full justify-center items-center">
-                        <button onClick={() => router.push(link)} className='flex gap-2 items-center justify-center bg-black text-[#DCE95B] px-4 font-bold py-2 rounded-full text-sm'>
+                        <button onClick={()=>dispatch(sharedAds({imageSrc,desc,Amt,link,adId}))} className='flex gap-2 items-center justify-center bg-black text-[#DCE95B] px-4 font-bold py-2 rounded-full text-sm'>
                             <Image className='w-5 h-5' src={WhatsApp} alt='WhatsApp' />
                             SHARE LINK
                         </button>

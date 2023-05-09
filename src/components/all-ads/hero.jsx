@@ -22,13 +22,14 @@ const Hero = () => {
                     {
                         adShow.length > 0 ? (
                             adShow.map((ad) => (
-                                <Ad_card key={ad.id} imageSrc={ad.image} desc={ad.description} Amt={ad.amt} link={ad.link} />
+                                <Ad_card adId={ad.id} imageSrc={ad.image} desc={ad.description} Amt={ad.amt} link={ad.link} />
                             ))
                         ) : (
 
-                            
+
                             <div className="md:w-1/2 flex-col">
-                                <h1 className="text-white text-2xl font-medium">No ads currently available</h1>
+                                <h1 className="text-white text-2xl font-medium">No Ads Currently available.
+                                    Kindly check back in some time.</h1>
                             </div>
 
                         )
