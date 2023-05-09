@@ -22,7 +22,7 @@ const Hero = () => {
                     {
                         adShow.length > 0 ? (
                             adShow.map((ad) => (
-                                <Ad_card adId={ad.id} imageSrc={ad.image} desc={ad.description} Amt={ad.amt} link={ad.link} />
+                                <Ad_card adId={ad.adId} imageSrc={ad.imageSrc} desc={ad.desc} Amt={ad.Amt} link={ad.link} />
                             ))
                         ) : (
 

@@ -30,7 +30,7 @@ const RecentAds = () => {
                     ?
                     
                         (adShow.map(ad =>
-                            <AdsCard id={ad.id} image={ad.image} title={ad.description} amt={ad.amt} />
+                            <AdsCard adId={ad.adId} imageSrc={ad.imageSrc} desc={ad.desc} Amt={ad.Amt} />
                         )) 
                         
                     :

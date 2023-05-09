@@ -18,7 +18,7 @@ const Hero = ({ads}) => {
                     </div>
                     {
                         ads.map(ad => (
-                            <Ad_card adId={ad.id} imageSrc={ad.image} desc={ad.description} Amt={ad.amt} alt="this is adverstisement" link={ad.link} />
+                            <Ad_card adId={ad.adId} imageSrc={ad.imageSrc} desc={ad.desc} Amt={ad.Amt} alt="this is adverstisement" link={ad.link} />
                         ))
                     }
 

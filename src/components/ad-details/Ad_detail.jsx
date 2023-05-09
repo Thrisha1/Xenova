@@ -14,8 +14,8 @@ const Ad_detail = ({adId}) => {
 
     useEffect(() => {
         console.log(adId);
-        setad1(adShow.filter(ad => ad.id == adId))
-        setad2(adShow.filter(ad => ad.id != adId))
+        setad1(adShow.filter(ad => ad.adId == adId))
+        setad2(adShow.filter(ad => ad.adId != adId))
     },[])
 
 
