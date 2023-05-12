@@ -9,6 +9,7 @@ import bg from '../../public/bg black.png'
 import UserCard from '../../components/profile/UserCard.jsx'
 import Earnings from '../../components/statement/Earnings.jsx'
 import Referral from '../../components/statement/Referral.jsx'
+import Payout from '../../components/statement/Payout.jsx'
 import down_arrow from '../../public/statement/down_arrow.png'
 const page = () => {
   // const [startDate, setStartDate] = useState(new Date());
@@ -30,6 +31,7 @@ const page = () => {
         
       </div>
       </div>
+      <Payout/>
     </div>
   )
 }

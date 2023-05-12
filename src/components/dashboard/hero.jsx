@@ -10,9 +10,9 @@ const Hero = () => {
     return (
         <div>
             <section className="min-h-[600px] flex justify-center items-center">
-                <div className="flex-col gap-10 justify-center bg-[#101010] mx-2 from-[#86fde8] mt-0 to-[#acb6e5] overflow-hidden flex rounded-b-2xl shadow-lg p-5 align-middle items-stretch h-auto md:flex-row">
+                <div className="flex-col gap-10 justify-center bg-[#101010] from-[#86fde8] mt-0 to-[#acb6e5] overflow-hidden flex rounded-b-2xl shadow-lg p-5 align-middle items-stretch h-auto md:flex-row">
                     <div className="md:w-1/2 flex-col">
-                        <h1 className="text-white text-4xl font-bold">Hola John!</h1>
+                        <h1 className="text-white text-3xl font-bold">Hola John!</h1>
                         <h2 className="text-white text-sm mt-3">
                             Share Ads on Whatsapp and boost your Income!
                         </h2>
@@ -22,8 +22,8 @@ const Hero = () => {
                             Login daily to get more
                         </div>
                         <div className='flex justify-between w-full px-3 my-4'>
-                            <h1 className='text-4xl font-bold tracking-widest '><span className='text-2xl mr-1'>₹</span>32.9</h1>
-                            <button className='bg-black text-[#DCE95B] px-4 font-bold py-2 rounded-full'>
+                            <h1 className='text-3xl font-bold tracking-widest '><span className='text-2xl mr-1'>₹</span>32.9</h1>
+                            <button className='bg-black text-[#DCE95B] px-3 text-md font-bold py-1 rounded-full'>
                                 REDEEM NOW
                             </button>
                         </div>
@@ -43,7 +43,7 @@ const Hero = () => {
                             Say goodbye to complicated monetization methods. MinglePay
                             simplifies the process of earning ads on WhatsApp, making it easy for you to earn money simply by sharing with your contacts
                         </p>
-                        <Link href="/dashboard" className="group py-2 px-3 lg:w-3/4 md:w-full rounded-xl mt-2 flex justify-center items-center text-sm hover:scale-105 duration-700 text-[#002D74]">
+                        <Link href="/dashboard#newAds" className="group py-2 px-3 lg:w-3/4 md:w-full rounded-xl mt-2 flex justify-center items-center text-sm hover:scale-105 duration-700 text-[#002D74]">
                             <Image src={NewAds} alt="New Ad" />
                         </Link>
                     </div>
