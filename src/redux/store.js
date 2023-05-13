@@ -2,9 +2,11 @@ import { configureStore } from "@reduxjs/toolkit";
 import counterReducer from "./features/counterSlice";
 import adReducer from "./features/adSlice";
 import userReducer from "./features/userSlice";
+import referralReducer from "./features/referral/referralSlice";
 
 export const store = configureStore({
   reducer: {
+    referral: referralReducer,
     counter: counterReducer,
     ad: adReducer,
     user: userReducer,

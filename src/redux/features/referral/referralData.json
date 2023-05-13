@@ -1,0 +1,26 @@
+
+{
+  "referrals": [
+    {
+      "name": "John Doe",
+      "referral_date": "01/01/2023",
+      "isSignUp": false,
+      "isFirstAdPlaced": false,
+      "isFirstPayoutPlaced": false
+    },
+    {
+      "name": "Jane Smith",
+      "referral_date": "02/15/2023",
+      "isSignUp": true,
+      "isFirstAdPlaced": true,
+      "isFirstPayoutPlaced": false
+    },
+    {
+      "name": "Alex Johnson",
+      "referral_date": "03/10/2023",
+      "isSignUp": true,
+      "isFirstAdPlaced": true,
+      "isFirstPayoutPlaced": true
+    }
+  ]
+}
