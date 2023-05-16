@@ -26,7 +26,7 @@ const ReferralHero = () => {
             </div>
             <div className="flex justify-between w-full py-3">
               <div className="flex justify-between w-full py-3">
-                <Image src={dummyimg} className="w-20 h-15"/>
+                <img alt="dummyimg" src={dummyimg} className="w-full h-full"/>
                 <p className="text-xs px-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam praesentium
                   dolores, temporibus qui labore ratione libero eligendi ipsa! Hic numquam omnis magnam.</p>
               </div>
