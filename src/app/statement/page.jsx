@@ -23,7 +23,7 @@ const page = () => {
           <div className="">
             <p className="text-xl tracking-wider text-white">Statements</p>
             <p className="text-white text-xs font-light">
-              Breakdown your total earnings through Minglepay
+              Breakdown your total earnings through xenova
             </p>
           </div>
           <Earnings />

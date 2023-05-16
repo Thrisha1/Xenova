@@ -30,7 +30,7 @@ const Header = ({logo}) => {
       <div className="flex items-center ">
         <img src="http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogodummy.513ee9dc.png&w=96&q=75" alt="Logo" width="70" height="70" />
         <Link href="/" >
-          <h1 className="text-white text-xl font-sans bg-transparent">MINGLEPAY</h1>
+          <h1 className="text-white text-xl font-sans bg-transparent">XENOVA</h1>
         </Link>
       </div>
       <div className="flex gap-4">

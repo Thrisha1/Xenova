@@ -13,7 +13,7 @@ const LandingFaq = () => {
       <Accordion collapseAll={true}>
         <Accordion.Panel className="rounded-b-2xl">
           <Accordion.Title style={{color:"black"}}>
-            What is MinglePay?
+            What is xenova?
           </Accordion.Title>
           <Accordion.Content>
             <p className="mb-2 ">
@@ -23,18 +23,7 @@ const LandingFaq = () => {
         </Accordion.Panel>
         <Accordion.Panel className="rounded-b-2xl">
           <Accordion.Title style={{color:"black"}}>
-            What is MinglePay?
-          </Accordion.Title>
-          <Accordion.Content>
-            <p className="mb-2 ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium posuere fermentum. Cras viverra
-            </p>
-          </Accordion.Content>
-        </Accordion.Panel>
-
-        <Accordion.Panel className="rounded-b-2xl">
-          <Accordion.Title style={{color:"black"}}>
-            What is MinglePay?
+            What is xenova?
           </Accordion.Title>
           <Accordion.Content>
             <p className="mb-2 ">
@@ -45,7 +34,18 @@ const LandingFaq = () => {
 
         <Accordion.Panel className="rounded-b-2xl">
           <Accordion.Title style={{color:"black"}}>
-            What is MinglePay?
+            What is xenova?
+          </Accordion.Title>
+          <Accordion.Content>
+            <p className="mb-2 ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium posuere fermentum. Cras viverra
+            </p>
+          </Accordion.Content>
+        </Accordion.Panel>
+
+        <Accordion.Panel className="rounded-b-2xl">
+          <Accordion.Title style={{color:"black"}}>
+            What is xenova?
           </Accordion.Title>
           <Accordion.Content>
             <p className="mb-2 ">

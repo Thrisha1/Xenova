@@ -58,7 +58,7 @@ const Hero = () => {
                             Share Ads on Whatsapp and boost your Income!
                         </h2>
                         <p className="text-white text-sm mb-4 text-center md:text-left">
-                            Say goodbye to complicated monetization methods. MinglePay
+                            Say goodbye to complicated monetization methods. Xenova
                                           simplifies the process of earning money online. All you have to do
                                           is share ads on Whatsapp and earn money for every click you get.
                                           Get started now!

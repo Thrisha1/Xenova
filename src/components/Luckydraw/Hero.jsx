@@ -7,7 +7,7 @@ const LuckyHero = () => {
       <div className="flex-col gap-15  bg-[#101010]  from-[#86fde8] mt-0 to-[#acb6e5] overflow-hidden flex rounded-b-2xl shadow-lg p-5 align-middle items-stretch h-auto md:flex-row">
         <div className="md:w-1/2 pt-10 gap-6 px-8 md:px-16 flex flex-col ">
           <h1 className="text-3xl tracking-widest text-white font-bold mb-4 text-left md:text-left">
-            MinglePay Weekly Lucky Draw
+          Xenova Weekly Lucky Draw
           </h1>
           <div className="flex flex-row tracking-widest justify-left">
 
