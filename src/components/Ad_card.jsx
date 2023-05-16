@@ -25,7 +25,7 @@ const Ad_card = ({imageSrc,desc,Amt,link,adId}) => {
             <div className="xxs:flex-row xxxs:flex xxxs:flex-col justify-center items-center">
                 {/* right image */}
                 <div onClick={handleClick} className="flex w-3/5 justify-center items-center pl-2 mt-2 mr-2">
-                    <Image className='rounded-lg' width={300} height={300} src={imageSrc} alt="ad" />
+                    <img className='rounded-lg' width={300} height={300} src={imageSrc} alt="ad" />
                 </div>
 
                 {/* left side */}
@@ -40,7 +40,7 @@ const Ad_card = ({imageSrc,desc,Amt,link,adId}) => {
                     <hr className='w-11/12 text-center flex justify-center my-2 ml-2 bg-gray-800 p-[.05rem] ' />
                     <div className="flex w-full justify-center items-center">
                         <button onClick={()=>dispatch(sharedAds({imageSrc,desc,Amt,link,adId}))} className='flex gap-2 items-center justify-center bg-black text-[#DCE95B] px-4 font-bold py-2 rounded-full text-sm'>
-                            <Image className='w-5 h-5' src={WhatsApp} alt='WhatsApp' />
+                            <img className='w-5 h-5' src="/images/whatsapp.svg" alt='WhatsApp' />
                             SHARE LINK
                         </button>
                     </div>

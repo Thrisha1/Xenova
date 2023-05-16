@@ -1,8 +1,6 @@
 "use client"
 
 import React, { useEffect } from 'react'
-import WhatsApp from '../public/images/whatsapp.svg'
-import Image from 'next/image'
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { sharedAds, fetchContacts } from '../redux/features/userSlice';
@@ -25,7 +23,7 @@ const Ad_card_run = ({ imageSrc, desc, Amt, link, adId, shared, screenShot_uploa
             <div className="xxs:flex-row xxxs:flex xxxs:flex-col justify-center items-center">
                 {/* right image */}
                 <div className="flex w-3/5 justify-center items-center pl-2 mt-2 mr-2">
-                    <Image className='rounded-lg' width={300} height={300} src={imageSrc} alt="ad" />
+                    <img className='rounded-lg' width={300} height={300} src={imageSrc} alt="ad" />
                 </div>
 
                 {/* left side */}
