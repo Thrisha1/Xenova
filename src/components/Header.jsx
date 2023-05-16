@@ -1,15 +1,13 @@
 "use client"
-
 import React, { useState } from 'react'
 import Logo from '../public/logodummy.png'
-import Image from 'next/image'
 import Link from 'next/link'
 import '../app/globals.css'
 import { UsersIcon } from "@heroicons/react/outline";
 import { Button, Drawer, Radio, Space } from "antd";
 import { useRouter } from 'next/navigation'
 
-const Header = () => {
+const Header = ({logo}) => {
 
   const router = useRouter()
 
@@ -30,7 +28,7 @@ const Header = () => {
   return (
     <div className="flex items-center  justify-between px-3  bg-[#101010]">
       <div className="flex items-center ">
-        <Image src={Logo} alt="Logo" width="70" height="70" />
+        <img src="http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogodummy.513ee9dc.png&w=96&q=75" alt="Logo" width="70" height="70" />
         <Link href="/" >
           <h1 className="text-white text-xl font-sans bg-transparent">MINGLEPAY</h1>
         </Link>
@@ -61,12 +59,6 @@ const Header = () => {
               },
             }}
 
-          // style = {{
-
-          //   // Adding media query..
-          //   '@media (max-width: 640px)': {
-          //     width:200
-          //   }}}
           >
             <svg
               onClick={onClose}
@@ -84,17 +76,9 @@ const Header = () => {
                 d="M6 18L18 6M6 6l12 12"
               ></path>
             </svg>
-            {/* <Image src={logo2} className="w-5/6" /> */}
             <h1 className="pt-5 text-white text-2xl font-bold font-body">
               Fast Links :
             </h1>
-            {/* <p className="text-white pt-5">
-              Our aim is to innovate, and improve the product and client processes
-              so as to have cost effective and better solutions..
-            </p> */}
-            {/* <button onClick={() => router.push('/contact')} className="px-5 border-2 py-2 mt-7 hover:bg-shipy hover:text-shipblue hover:border-0">
-              CONTACT US
-            </button> */}
             <h1 onClick={()=>linkMover("dashboard")} className="mt-14 text-xl">Dashboard</h1>
             <h1 onClick={()=>linkMover("shared-ads")} className="mt-14 text-xl">Shared Ads</h1>
             <h1 onClick={()=>linkMover("all-ads")} className="mt-14 text-xl">All Ads</h1>
