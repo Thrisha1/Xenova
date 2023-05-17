@@ -9,7 +9,7 @@ const ReferralHero = () => {
   return (<div>
     <section className="min-h-[600px] flex justify-center p-0">
       <div className="flex-col gap-15  bg-[#101010]  from-[#86fde8] mt-0 to-[#acb6e5] overflow-hidden flex rounded-b-2xl shadow-lg p-5 align-middle items-stretch h-auto md:flex-row">
-        <div className="md:w-1/2 pt-10 gap-6 px-8 md:px-16 flex flex-col ">
+        <div className="pt-10 gap-6 px-1  flex flex-col ">
           <h1 className="text-3xl tracking-widest text-white font-bold mb-4 text-left md:text-left">
             Total Referral Earnings
           </h1>
@@ -17,7 +17,7 @@ const ReferralHero = () => {
 
             <h1 className="text-white text-[1.5rem]    tracking-widest font-bold mb-4 text-center md:text-left">{" "} ₹ 44&nbsp;</h1>
           </div>
-          <div className="max-w-md p-2 h-auto justify-between bg-gradient-to-r from-[#8AD863] via-[#D6F19A] to-[#D3E853] rounded-xl ">
+          <div className="max-w-md p-2   h-auto justify-between bg-gradient-to-r from-[#8AD863] via-[#D6F19A] to-[#D3E853] rounded-xl ">
 
 
             <div className="">
@@ -26,9 +26,9 @@ const ReferralHero = () => {
             </div>
             <div className="flex justify-between w-full py-3">
               <div className="flex justify-between w-full py-3">
-                <img alt="dummyimg" src={dummyimg} className="w-full h-full"/>
+                <Image loading="lazy" alt="dummyimg" src={dummyimg} className="w-full h-full"/>
                 <p className="text-xs px-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam praesentium
-                  dolores, temporibus qui labore ratione libero eligendi ipsa! Hic numquam omnis magnam.</p>
+                  dolores, temporibus qui labore r.</p>
               </div>
 
             </div>

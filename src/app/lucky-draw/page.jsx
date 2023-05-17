@@ -4,7 +4,7 @@ import Terms from "@/components/Luckydraw/Terms";
 
 const index = () => {
   return (
-    <div>
+    <div className="m-auto ">
       <LuckyHero/>
       <Terms/>
     </div>

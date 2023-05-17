@@ -5,7 +5,7 @@ const LuckyHero = () => {
     <div>
       <section className="min-h-[600px] flex justify-center p-0">
         <div className="flex-col gap-15 bg-[#101010] from-[#86fde8] mt-0 to-[#acb6e5] overflow-hidden flex rounded-b-2xl shadow-lg p-5 align-middle items-stretch h-auto md:flex-row">
-          <div className="md:w-1/2 pt-10 gap-6 px-8 md:px-16 flex flex-col">
+          <div className=" pt-10 gap-6 px-1 md:px-16 flex flex-col">
             <h1 className="text-2xl tracking-widest text-white font-bold mb-4 text-center md:text-left">
               MinglePay Weekly Lucky Draw
             </h1>
