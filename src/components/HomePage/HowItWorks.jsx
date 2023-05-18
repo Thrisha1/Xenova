@@ -14,7 +14,7 @@ const HowItWorks = () => {
           </div>
           <div className="grid col-span-4  items-start justify-start text-left grid-cols-1">
             <h2 className="text-[1rem] font-semibold">Configure Your Profile</h2>
-            <p className="font-mediuml text-[0.8rem] ">To start using MInglePay, you need to create an account. You can do this by signing up</p>
+            <p className="font-mediuml text-[0.8rem] ">To start using xenova, you need to create an account. You can do this by signing up</p>
           </div>
         </div>
            <div className="grid grid-cols-5 col-span-1 pt-4 bg-white border-r-gray-50 text-center justify-center overflow-hidden rounded-2xl p-5 align-middle h-auto">
@@ -23,7 +23,7 @@ const HowItWorks = () => {
           </div>
           <div className="grid col-span-4  items-start justify-start text-left grid-cols-1">
             <h2 className="text-[1rem] font-semibold">Configure Your Profile</h2>
-            <p className="font-mediuml text-[0.8rem] ">To start using MInglePay, you need to create an account. You can do this by signing up</p>
+            <p className="font-mediuml text-[0.8rem] ">To start using xenova, you need to create an account. You can do this by signing up</p>
           </div>
         </div>
         <div className="grid grid-cols-5 col-span-1 pt-4 bg-white border-r-gray-50 text-center justify-center overflow-hidden rounded-2xl p-5 align-middle h-auto">
@@ -32,7 +32,7 @@ const HowItWorks = () => {
           </div>
           <div className="grid col-span-4  items-start justify-start text-left grid-cols-1">
             <h2 className="text-[1rem] font-semibold">Configure Your Profile</h2>
-            <p className="font-mediuml text-[0.8rem] ">To start using MInglePay, you need to create an account. You can do this by signing up</p>
+            <p className="font-mediuml text-[0.8rem] ">To start using xenova, you need to create an account. You can do this by signing up</p>
           </div>
         </div>
 

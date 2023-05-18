@@ -40,7 +40,7 @@ const Hero = () => {
 
                     <div className="md:w-1/2 px-8 md:px-16 flex flex-col justify-center">
                         <p className="text-white text-sm mb-4 text-center md:text-left">
-                            Say goodbye to complicated monetization methods. MinglePay
+                            Say goodbye to complicated monetization methods. Xenova
                             simplifies the process of earning ads on WhatsApp, making it easy for you to earn money simply by sharing with your contacts
                         </p>
                         <Link href="/dashboard#newAds" className="group py-2 px-3 lg:w-3/4 md:w-full rounded-xl mt-2 flex justify-center items-center text-sm hover:scale-105 duration-700 text-[#002D74]">

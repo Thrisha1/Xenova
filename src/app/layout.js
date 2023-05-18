@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className=" ">
         <Providers>
-          <Header/>
+          <Header />
           {children}
           <Footer_common />
         </Providers>
