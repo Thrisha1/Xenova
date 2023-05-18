@@ -1,12 +1,8 @@
 "use client"
 
-import Image from 'next/image';
 import React from 'react'
 import AdsCard from './AdsCard'
-import ads from '../../public/ads.jpeg'
 import Link from 'next/link'
-import Ad1 from '../../public/images/eid_ads.svg'
-import Ad2 from '../../public/ad1.png'
 // import Ad3 from '../../public/images/ad3.svg'
 
 import { useAppSelector, useAppDispatch } from '../../redux/hooks.jsx';

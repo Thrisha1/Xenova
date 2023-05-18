@@ -1,22 +1,25 @@
-import Image from 'next/image'
 import React from 'react'
-import Cup from '../../public/images/cup.svg'
-import Time_box from '../../public/images/time_box.svg'
-import Trophy_award from '../../public/images/trophy-award.svg'
-import Add_people from '../../public/images/account-multiple-plus.svg'
 import Link from 'next/link'
 
 const Link_cards = () => {
     return (
         <div className='flex-col justify-center items-center mx-8 mt-8'>
             <div className='flex bg-black py-5 rounded-xl px-5 items-center'>
-                <Image src={Cup} alt="cup" />
+                {/* <Image src={Cup} alt="cup" /> */}
+                <svg width="60" height="60" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.85 19.75C8.55 22.9 10.3 25.525 14.5 26.4V30.845C11 32.21 11 35.5 11 35.5H20.1L14.85 23.25L21.85 14.5L15.725 4H11C11 2.25 9.075 0.5 7.5 0.5H0.5V16.25C0.5 18 2.25 19.75 4 19.75H7.85ZM7.5 16.25H4V4H7.5V16.25ZM28.15 19.75H32C33.75 19.75 35.5 18 35.5 16.25V0.5H28.5C26.925 0.5 25 2.25 25 4H21.325L26.225 14.5L18.35 23.25L20.1 35.5H25C25 35.5 25 32.21 21.5 30.845V26.4875C25.6825 25.6125 27.625 22.725 28.15 19.75ZM32 16.25H28.5V4H32V16.25Z" fill="#DCE95B" />
+                </svg>
+
                 <h1 className="text-white text-xl ml-4">
                     Vishu Bumber Results Out Now
                 </h1>
             </div>
             <Link href={"/shared-ads"} className='flex bg-white py-5 rounded-xl px-5 items-center mt-3'>
-                <Image src={Time_box} alt="cup" />
+                {/* <Image src={Time_box} alt="cup" /> */}
+                <svg width="64" height="60" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.3875 28.6125L32.6125 27.3875L29.375 24.15V19.25H27.625V24.85L31.3875 28.6125ZM19.75 10.5H32V3.5H19.75V10.5ZM28.5 33.25C26.0792 33.25 24.0153 32.3966 22.3085 30.6898C20.6017 28.9829 19.7488 26.9197 19.75 24.5C19.75 22.0792 20.6034 20.0153 22.3103 18.3085C24.0171 16.6017 26.0803 15.7488 28.5 15.75C30.9208 15.75 32.9847 16.6034 34.6915 18.3103C36.3983 20.0171 37.2512 22.0803 37.25 24.5C37.25 26.9208 36.3966 28.9847 34.6898 30.6915C32.9829 32.3983 30.9197 33.2512 28.5 33.25ZM4 28C3.0375 28 2.21325 27.657 1.52725 26.971C0.841253 26.285 0.498836 25.4613 0.500003 24.5V3.5C0.500003 2.5375 0.843003 1.71325 1.529 1.02725C2.215 0.341253 3.03867 -0.0011637 4 2.97114e-06H32C32.9625 2.97114e-06 33.7868 0.343003 34.4728 1.029C35.1588 1.715 35.5012 2.53867 35.5 3.5V14.4813C34.4792 13.7521 33.3633 13.1979 32.1523 12.8188C30.9413 12.4396 29.7093 12.25 28.4563 12.25C25.0729 12.25 22.1924 13.4458 19.8148 15.8375C17.4371 18.2292 16.2488 21.1167 16.25 24.5C16.25 25.1125 16.2938 25.7104 16.3813 26.2938C16.4688 26.8771 16.6 27.4458 16.775 28H4Z" fill="#1B1B1B" />
+                </svg>
+
                 <div className='flex-col ml-4'>
                     <h1 className="text-black text-xl ">
                         Shared Ads
@@ -27,13 +30,21 @@ const Link_cards = () => {
                 </div>
             </Link>
             <div className='flex mt-3 bg-blue-800 py-5 rounded-xl px-5 items-center'>
-                <Image src={Trophy_award} alt="cup" />
+                {/* <Image src={Trophy_award} alt="cup" /> */}
+                <svg width="70" height="50" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.5998 18.725L29.0498 28L20.9998 21.35L12.9498 28L15.3998 18.9L8.0498 12.775L17.4998 12.25L20.9998 3.5L24.4998 12.25L33.9498 12.775L26.5998 18.725ZM24.4998 33.25H22.7498V28L20.9998 26.25L19.2498 28V33.25H17.4998C15.5748 33.25 13.9998 34.825 13.9998 36.75V38.5H27.9998V36.75C27.9998 34.825 26.4423 33.25 24.4998 33.25Z" fill="#DCE95B" />
+                </svg>
+
                 <h1 className="text-white text-xl ml-4">
                     Participate in xenova Lucky Draw
                 </h1>
             </div>
             <div className='flex bg-white py-5 rounded-xl px-5 items-center mt-3'>
-                <Image src={Add_people} alt="cup" />
+                {/* <Image src={Add_people} alt="cup" /> */}
+                <svg width="60" height="60" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M33.25 29.75V33.25H12.25V29.75C12.25 29.75 12.25 22.75 22.75 22.75C33.25 22.75 33.25 29.75 33.25 29.75ZM28 14C28 12.9616 27.6921 11.9466 27.1152 11.0833C26.5383 10.2199 25.7184 9.54699 24.7591 9.14963C23.7998 8.75227 22.7442 8.64831 21.7258 8.85088C20.7074 9.05345 19.7719 9.55347 19.0377 10.2877C18.3035 11.0219 17.8034 11.9574 17.6009 12.9758C17.3983 13.9942 17.5023 15.0498 17.8996 16.0091C18.297 16.9684 18.9699 17.7883 19.8333 18.3652C20.6966 18.9421 21.7116 19.25 22.75 19.25C24.1424 19.25 25.4777 18.6969 26.4623 17.7123C27.4469 16.7277 28 15.3924 28 14ZM33.6 22.855C34.5566 23.7375 35.3278 24.8018 35.8687 25.9856C36.4095 27.1694 36.7091 28.4491 36.75 29.75V33.25H42V29.75C42 29.75 42 23.7125 33.6 22.855ZM31.5 8.75C30.9713 8.75032 30.4458 8.83298 29.9425 8.995C30.9663 10.4632 31.5153 12.2101 31.5153 14C31.5153 15.7899 30.9663 17.5368 29.9425 19.005C30.4458 19.167 30.9713 19.2497 31.5 19.25C32.8924 19.25 34.2277 18.6969 35.2123 17.7123C36.1969 16.7277 36.75 15.3924 36.75 14C36.75 12.6076 36.1969 11.2723 35.2123 10.2877C34.2277 9.30313 32.8924 8.75 31.5 8.75ZM14 17.5H8.75V12.25H5.25V17.5H0V21H5.25V26.25H8.75V21H14V17.5Z" fill="#101010" />
+                </svg>
+
                 <div className='flex-col ml-4'>
                     <h1 className="text-black text-xl ">
                         Your Referrals
