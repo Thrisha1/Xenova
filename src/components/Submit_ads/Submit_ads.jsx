@@ -3,14 +3,15 @@
 import { useMutation } from "@apollo/client";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { Add_AD } from "@/functions/graphql/queries/ads.mutation";
+import { ADD_AD } from "@/functions/graphql/queries/ads.mutation";
 import { handleImage } from "@/functions/image/upload";
 
 const Submit_ads = () => {
   const { register, handleSubmit } = useForm();
   const [data, setData] = useState(null);
   const [file, setFile] = useState(null);
-  const [mutateFunction, { mutation_data, loading, error }] = useMutation(Add_AD);
+  const [mutateFunction, { mutation_data, loading, error }] =
+    useMutation(ADD_AD);
 
   const onSubmit = async (data) => {
     //   setData(JSON.stringify(data));
@@ -19,7 +20,7 @@ const Submit_ads = () => {
     // console.log(keys);
     data.image = keys[0];
     data.expiry = new Date(new Date().getTime() + data.expiry * 86400000); // 86400000 ms in a day
-    mutateFunction(data);
+    mutateFunction({variables:data});
     console.log(data);
   };
   const handleChange = (e) => {
@@ -49,6 +50,21 @@ const Submit_ads = () => {
                   placeholder="Type product name"
                   required=""
                 />
+              <div class="sm:col-span-2">
+                <label
+                  for="url"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >
+                  URL
+                </label>
+                <input
+                  {...register("url")}
+                  type="text"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  placeholder="Type product name"
+                  required=""
+                />
+              </div>
               </div>
               <div class="w-full">
                 <label

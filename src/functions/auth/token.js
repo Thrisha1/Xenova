@@ -1,4 +1,6 @@
+"use client";
 import jwtDecode from "jwt-decode"
+
 class Token {
   constructor(type) {
     this.type = type
@@ -33,7 +35,8 @@ class Token {
   }
 
   get = () => {
-    return localStorage.getItem(this.type)
+    if (typeof window !== "undefined")
+      return localStorage.getItem(this.type)
   }
 
   getData = () => {
@@ -43,11 +46,14 @@ class Token {
   }
 
   set = token => {
-    localStorage.setItem(this.type, token)
+
+    if (typeof window !== "undefined")
+      localStorage.setItem(this.type, token)
   }
 
   remove = () => {
-    localStorage.removeItem(this.type)
+    if (typeof window !== "undefined")
+      localStorage.removeItem(this.type)
   }
 }
 export default Token

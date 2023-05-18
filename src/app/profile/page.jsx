@@ -13,12 +13,25 @@ import down_arrow from "../../public/statement/down_arrow.png";
 import { useQuery } from "@apollo/client";
 import { GetUser } from "@/functions/graphql/queries/user.queries.js";
 import { registerUser } from "@/functions/auth/user.js";
+import app from "../../firebase/config";
+import { getAuth } from "firebase/auth";
+
+const auth = getAuth(app);
 
 const page = () => {
   // const [startDate, setStartDate] = useState(new Date());
-
+  const registerCB = () => {
+  //   console.log(auth);
+  //   auth.currentUser
+  //     .getIdTokenResult(/*force refresh*/ true)
+  //     .then((idTokenResult) => {
+  //       const tknId = new Token("id");
+  //       console.log(idTokenResult);
+  //       tknId.set(idTokenResult);
+  //     });
+  };
   React.useEffect(() => {
-    registerUser()
+    registerUser(registerCB);
   }, []);
   const { loading, error, data } = useQuery(GetUser);
   console.log(data);
