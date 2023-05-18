@@ -28,7 +28,7 @@ const page = () => {
           <Details />
 
         </div>
-        <div className="w-full flex items-center justify-center m-3">
+        <div className="w-full flex items-center justify-center my-3">
         <svg
           width="117"
           height="93"
