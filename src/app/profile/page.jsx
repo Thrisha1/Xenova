@@ -28,11 +28,7 @@ const page = () => {
           <Details />
 
         </div>
-        <UserCard />
-        <Details />
-
-      </div>
-      <div className="w-full flex items-center justify-center m-3">
+        <div className="w-full flex items-center justify-center m-3">
         <svg
           width="117"
           height="93"
@@ -85,6 +81,8 @@ const page = () => {
             fill="#101010"
           />
         </svg>
+      </div>
+
       </div>
       <div className="my-2 flex flex-col h-64 justify-between px-4">
         <h1 className="text-green-500">MORE LINKS</h1>
