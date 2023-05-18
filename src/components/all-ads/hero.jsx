@@ -1,9 +1,7 @@
-"use client";
-
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import Ad_card from "../Ad_card";
+"use client"
+import React from 'react'
+import Link from 'next/link'
+import Ad_card from '../Ad_card'
 
 import { useAppSelector, useAppDispatch } from "../../redux/hooks.jsx";
 import { GET_AD } from "../../functions/graphql/queries/ads.query";

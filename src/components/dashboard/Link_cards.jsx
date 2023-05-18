@@ -29,7 +29,7 @@ const Link_cards = () => {
             <div className='flex mt-3 bg-blue-800 py-5 rounded-xl px-5 items-center'>
                 <Image src={Trophy_award} alt="cup" />
                 <h1 className="text-white text-xl ml-4">
-                    Participate in Minglepay Lucky Draw
+                    Participate in xenova Lucky Draw
                 </h1>
             </div>
             <div className='flex bg-white py-5 rounded-xl px-5 items-center mt-3'>

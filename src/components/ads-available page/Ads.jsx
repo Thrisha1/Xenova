@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from "next/image";
 import Link from "next/link";
 import Share from "../../components/ads-available page/ShareButton.jsx";
 
@@ -10,7 +9,7 @@ const Ads = (props) => {
         href="/"
         className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row  "
       >
-        <Image
+        <img
           className="object-cover h-[30rem] w-[30rem]  md:rounded-none md:rounded-l-lg"
           src={props.img}
           width="500"
