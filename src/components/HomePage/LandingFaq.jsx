@@ -5,7 +5,7 @@ import {Accordion} from "flowbite-react";
 
 const LandingFaq = () => {
   return (
-    <div className="bg-[#D9D9D9] mt-10 mx-5 rounded-2xl px-5 py-8">
+    <div className="bg-[#D9D9D9] mt-10 mx-5 rounded-2xl px-5 py-8 mb-10">
 
       <div className="flex justify-center text-black text-2xl font-semibold mb-3">
         Frequently Asked Questions

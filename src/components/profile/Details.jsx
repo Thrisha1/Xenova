@@ -33,7 +33,7 @@ const Details = () => {
   };
 
   return (
-    <div className="bg-[#E8E8E8] h-[25rem]  rounded-xl my-2 p-2">
+    <div className="bg-[#E8E8E8] rounded-xl my-2 p-2">
       <form>
         <div className="">
           <div className="flex justify-between pr-2 items-center">
@@ -64,7 +64,7 @@ const Details = () => {
                 }}
                 class="flex items-center justify-center px-2 py-2 border border-transparent rounded-md shadow-sm bg-[#acd3e5]  focus:outline-none focus:ring-2 focus:ring-offset-2 "
               >
-                <Image
+                <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/882px-Google_%22G%22_Logo.svg.png?20230305195327"
                   height={20}
                   width={20}
@@ -103,7 +103,7 @@ const Details = () => {
                 }}
                 class="flex items-center justify-center px-2 py-2 border border-transparent rounded-md shadow-sm bg-[#acd3e5]  focus:outline-none focus:ring-2 focus:ring-offset-2 "
               >
-                <Image
+                <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/882px-Google_%22G%22_Logo.svg.png?20230305195327"
                   height={20}
                   width={20}

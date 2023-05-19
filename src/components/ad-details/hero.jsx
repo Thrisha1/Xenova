@@ -12,7 +12,7 @@ const Hero = ({ ads }) => {
         <div className="flex-col gap-4 justify-center bg-[#101010]  from-[#86fde8] mt-0 to-[#acb6e5] overflow-hidden flex rounded-b-2xl shadow-lg p-5 align-middle items-stretch h-auto md:flex-row">
           <div className="md:w-1/2 flex-col">
             <h1 className="text-white text-2xl font-medium">
-            xenova Eid Offer
+              xenova Eid Offer
             </h1>
             <h2 className="text-white text-lg mt-1">
               Earn upto ₹ <span className="font-bold text-3xl">44</span>

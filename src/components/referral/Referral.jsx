@@ -6,7 +6,7 @@ import { ClipboardIcon } from "@heroicons/react/outline";
 const Referral = () => {
   return (
 
-    <div className="max-w-sm p-2 h-[13rem] justify-between bg-gradient-to-r from-[#8AD863] via-[#D6F19A] to-[#D3E853] rounded-xl my-6">
+    <div className="max-w-sm p-2  justify-between bg-gradient-to-r from-[#8AD863] via-[#D6F19A] to-[#D3E853] rounded-xl mt-3 mb-6">
 
 
       <div className="">

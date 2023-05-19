@@ -22,9 +22,9 @@ const Ad_card = ({ imageSrc, desc, Amt, link, adId }) => {
                 Login daily to win Exciting Prizes
             </div>
 
-            <div className="xxs:flex-row xxxs:flex xxxs:flex-col justify-center items-center">
+            <div className=" xxxs:flex xxxs:flex-col justify-center items-center">
                 {/* right image */}
-                <div onClick={handleClick} className="flex w-3/5 justify-center items-center pl-2 mt-2 mr-2">
+                <div onClick={handleClick} className="flex w-full justify-center items-center pl-2 mt-2 mr-2">
                     <img className='rounded-lg' width={300} height={300} src={imageSrc} alt="ad" />
                 </div>
 

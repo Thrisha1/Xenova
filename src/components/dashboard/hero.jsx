@@ -23,9 +23,9 @@ const Hero = () => {
                         </div>
                         <div className='flex justify-between w-full px-3 my-4'>
                             <h1 className='text-3xl font-bold tracking-widest '><span className='text-2xl mr-1'>₹</span>32.9</h1>
-                            <button className='bg-black text-[#DCE95B] px-3 text-md font-bold py-1 rounded-full'>
+                            <Link href={"/redeem"} className='bg-black text-[#DCE95B] px-3 text-md font-bold py-1 rounded-full'>
                                 REDEEM NOW
-                            </button>
+                            </Link>
                         </div>
                         <div>
                             <span className='text-black'>Redeemable at ₹ 25</span>

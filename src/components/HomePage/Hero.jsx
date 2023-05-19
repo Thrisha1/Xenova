@@ -3,7 +3,7 @@ import React,{useState} from 'react'
 import {useRouter} from 'next/navigation'
 import Image from 'next/image'
 import PageLoader from '../../public/payment_img.png'
-import heroimg from '../../public/images/heroimg.png'
+import heroimg from '../../../public/images/heroimg.png'
 import Link from 'next/link'
 import app from '../../firebase/config';
 import {
@@ -46,8 +46,8 @@ const Hero = () => {
             <section className="min-h-[600px] flex justify-center">
                 <div className="flex-col pt-10 gap-10 justify-center bg-[#101010]  from-[#86fde8] mt-0 to-[#acb6e5] overflow-hidden flex rounded-b-2xl shadow-lg p-5 align-middle items-stretch h-auto md:flex-row">
                     <div className="md:w-1/2 flex justify-center">
-                        <Image loading="lazy" className="w-3/4 mx-auto md:mx-0"
-                            src={heroimg}
+                        <img loading="lazy" className="w-3/4 mx-auto md:mx-0"
+                            src="/images/heroimg.png"
                             alt="hero"/>
                     </div>
                     <div className="md:w-1/2 px-8 md:px-16 flex flex-col justify-center">
