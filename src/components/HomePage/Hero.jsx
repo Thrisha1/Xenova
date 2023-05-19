@@ -7,39 +7,49 @@ import heroimg from '../../../public/images/heroimg.png'
 import Link from 'next/link'
 import app from '../../firebase/config';
 import {
-    getAuth,
-    GoogleAuthProvider,
-    signInWithPopup,
-    signOut
+  getAuth,
+  GoogleAuthProvider,
+  signInWithPopup,
+  signOut,
 } from "firebase/auth";
+import Token from "@/functions/auth/token";
 
 const auth = getAuth(app);
 
-
 const Hero = () => {
-    const router = useRouter()
-    const [user, setUser] = useState({})
+  const router = useRouter();
+  const [user, setUser] = useState({});
 
-    // google
-    const provider = new GoogleAuthProvider();
+  // google
+  const provider = new GoogleAuthProvider();
+  provider.addScope('https://www.googleapis.com/auth/userinfo.profile');
 
-
-    const handleGoogleSignIn = () => (signInWithPopup(auth, provider).then(result => {
+  const handleGoogleSignIn = () =>
+    signInWithPopup(auth, provider)
+      .then((result) => {
         const user = result.user;
-        setUser(user)
-        router.push(user.emailVerified ? '/dashboard' : '/verify')
-        console.log(user)
-    }).catch(error => {
-        console.log("error", error)
-    }));
+        setUser(user);
+        const tknId = new Token("id");
+        // const tknRefresh = new Token("refresh")
+        result.user.getIdToken().then((token) => {
+          tknId.set(token);
+        });
+        router.push(user.emailVerified ? "/dashboard" : "/verify");
+        console.log(result);
+      })
+      .catch((error) => {
+        console.log("error", error);
+      });
 
-    const handleGoogleSignOut = () => {
-        signOut(auth).then(() => {
-            setUser({})
-        }).catch(error => {
-            setUser({})
-        })
-    }
+  const handleGoogleSignOut = () => {
+    signOut(auth)
+      .then(() => {
+        setUser({});
+      })
+      .catch((error) => {
+        setUser({});
+      });
+  };
 
     return (
         <div>
@@ -78,7 +88,7 @@ const Hero = () => {
                 </div>
             </section>
         </div>
-    )
-}
+  );
+};
 
-export default Hero
+export default Hero;
