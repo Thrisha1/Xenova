@@ -6,12 +6,12 @@ const LuckyHero = () => {
     <section className="min-h-[600px] flex justify-center p-0">
       <div className="flex-col gap-15  bg-[#101010]  from-[#86fde8] mt-0 to-[#acb6e5] overflow-hidden flex rounded-b-2xl shadow-lg p-5 align-middle items-stretch h-auto md:flex-row">
         <div className="md:w-1/2 pt-10 gap-6 px-8 md:px-16 flex flex-col ">
-          <h1 className="text-3xl tracking-widest text-white font-bold mb-4 text-left md:text-left">
-          Xenova Weekly Lucky Draw
+          <h1 className="text-3xl tracking-widest text-white font-bold mb-4 text-center">
+            Xenova Weekly Lucky Draw
           </h1>
-          <div className="flex flex-row tracking-widest justify-left">
+          <div className="flex flex-col tracking-widest justify-left">
 
-            <h2 className="text-white text-[1.5rem] tracking-widest font-normal mb-4 text-center md:text-left">
+            <h2 className="text-white text-[1.5rem] tracking-widest font-normal mb-2 text-center md:text-left">
               Share and Win&nbsp;
             </h2>
             <h1 className="text-white text-[1.5rem]    tracking-widest font-bold mb-4 text-center md:text-left">{" "}5000
@@ -25,7 +25,7 @@ const LuckyHero = () => {
                 Exciting Prizes</h1>
             </div>
             <div className="flex justify-between w-full py-3">
-              <p className="text-xs px-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam praesentium
+              <p className="text-xs px-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam praesentium
                 dolores, temporibus qui labore ratione libero eligendi ipsa! Hic numquam omnis magnam.</p>
             </div>
             <div className="bg-black h-[1px] my-2 mx-3"></div>

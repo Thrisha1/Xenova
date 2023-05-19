@@ -3,7 +3,7 @@ import React from 'react'
 const ReferralCard = () => {
   return (
     <div>
-      <div className=" rounded-3xl bg-white my-2 m-2 p-6 w-full ">
+      <div className="rounded-3xl bg-white my-2 p-6 w-full ">
         <div className="flex justify-between my-2 ">
           <div className="flex flex-col gap-y-2">
             <div className="text-[#101010] text-[1.1rem] text-left font-bold">
@@ -13,11 +13,9 @@ const ReferralCard = () => {
               Referred on April 20, 2023
             </div>
           </div>
-          <div className="bg-[#101010] text-white rounded-2xl text-[0.9rem] my-auto p-1 px-6">
-            MESSAGE
+          <div className="">
+            <h1 className="bg-[#101010] text-white rounded-2xl text-[0.9rem] my-auto p-1 px-6">MESSAGE</h1>
           </div>
-
-
         </div>
         <div className="content-center text-center justify-center  flex">
           <div>

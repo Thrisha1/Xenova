@@ -12,7 +12,7 @@ const UserCard = () => {
     return (
 
 
-        <div className="max-w-sm p-2 h-[8rem] justify-between bg-gradient-to-r from-[#8AD863] via-[#D6F19A] to-[#D3E853] rounded-xl ">
+        <div className="max-w-sm p-2 h-[8rem] justify-between bg-gradient-to-r from-[#8AD863] via-[#D6F19A] to-[#D3E853] rounded-xl my-4">
 
             {/* <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                 <div className="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
