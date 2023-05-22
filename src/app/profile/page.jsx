@@ -11,7 +11,7 @@ import UserCard from "../../components/profile/UserCard.jsx";
 import Details from "../../components/profile/Details.jsx";
 import down_arrow from "../../public/statement/down_arrow.png";
 import { useQuery } from "@apollo/client";
-import { GetUser } from "@/functions/graphql/queries/user.queries.js";
+import { GET_USER } from "@/functions/graphql/queries/user.queries.js";
 import { registerUser } from "@/functions/auth/user.js";
 import app from "../../firebase/config";
 import { getAuth } from "firebase/auth";
@@ -33,7 +33,7 @@ const page = () => {
   React.useEffect(() => {
     registerUser(registerCB);
   }, []);
-  const { loading, error, data } = useQuery(GetUser);
+  const { loading, error, data } = useQuery(GET_USER);
   console.log(data);
 
   return (
