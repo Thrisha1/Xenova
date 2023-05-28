@@ -9,9 +9,17 @@ export const ADD_AD = gql`
 `
 
 export const ADD_SHARE = gql`
-mutation ADD_SHARE($ad_id: uuid = "", $key String) {
+mutation ADD_SHARE($ad_id: uuid = "", $key: String) {
   insert_ad_shares_one(object: {ad_id: $ad_id, key: $key}) {
     id
+  }
+}
+`
+
+export const ADD_SHARE_PROOF = gql`
+mutation ADD_SHARE_PROOF($picture: String, $id: uuid) {
+  insert_ad_proof(objects: {id: $id, picture: $picture}) {
+    affected_rows
   }
 }
 `
