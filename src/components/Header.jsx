@@ -28,7 +28,7 @@ const Header = ({logo}) => {
   return (
     <div className="flex items-center  justify-between px-3  bg-[#101010]">
       <div className="flex items-center ">
-        <img src="http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogodummy.513ee9dc.png&w=96&q=75" alt="Logo" width="70" height="70" />
+        <img src="https://github.com/Thrisha1/xenova/blob/main/src/public/logodummy.png?raw=true" alt="Logo" width="70" height="70" />
         <Link href="/" >
           <h1 className="text-white text-xl font-sans bg-transparent">XENOVA</h1>
         </Link>
