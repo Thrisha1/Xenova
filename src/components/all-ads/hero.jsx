@@ -4,11 +4,11 @@ import Link from 'next/link'
 import Ad_card from '../Ad_card'
 
 import { useAppSelector, useAppDispatch } from "../../redux/hooks.jsx";
-import { GET_AD } from "../../functions/graphql/queries/ads.query";
+import { GET_ADS } from "../../functions/graphql/queries/ads.query";
 import { useQuery } from "@apollo/client";
 
 const Hero = () => {
-  const { loading, error, data } = useQuery(GET_AD);
+  const { loading, error, data } = useQuery(GET_ADS);
   const adShow = useAppSelector((state) => state.ad.ads);
   console.log(data);
   return (
