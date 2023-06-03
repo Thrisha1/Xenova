@@ -1,8 +1,6 @@
 "use client"
 
 import React, { useEffect } from 'react'
-import WhatsApp from '../public/images/whatsapp.svg'
-import Image from 'next/image'
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { sharedAds, fetchContacts } from '../redux/features/userSlice';
