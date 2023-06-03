@@ -19,17 +19,15 @@ const page = () => {
       style={{ backgroundImage: `url(${bg})`, backgroundRepeat: "no-repeat" }}
     >
       <div className="bg-[#101010] rounded-b-xl px-3  py-2">
-        <div className="flex flex-col gap-4 justify-between">
-          <div className="mb-4">
+        <div className="flex flex-col h-[38rem] justify-between">
+          <div className="">
             <p className="text-xl tracking-wider text-white">Statements</p>
             <p className="text-white text-xs font-light">
-              Breakdown your total earnings through xenova
+              Breakdown your total earnings through Minglepay
             </p>
           </div>
           <Earnings />
           <Referral />
-
-          {/* payouts logo */}
           <div className="w-full flex items-center justify-center">
             <svg
               width="104"

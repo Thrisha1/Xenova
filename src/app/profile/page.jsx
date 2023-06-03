@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import { useState } from "react";
@@ -31,7 +30,7 @@ const page = () => {
   //     });
   };
   React.useEffect(() => {
-    registerUser(registerCB);
+    registerUser();
   }, []);
   const { loading, error, data } = useQuery(GET_USER);
   console.log(data);
@@ -51,7 +50,7 @@ const page = () => {
           <Details />
 
         </div>
-        <div className="w-full flex items-center justify-center my-3">
+        <div className="w-full flex items-center justify-center m-3">
           <svg
             width="117"
             height="93"
