@@ -62,7 +62,7 @@ export const handleImage = async (fileL, folder = "") => {
     let result = await getpresignedUrl(fileL, folder);
     let i = 0
     result.forEach(({ data }) => {
-        uploadArray.push(uploadToBucket(fileL[i].file, data.url, data.fields));
+        uploadArray.push(uploadToBucket(fileL[i], data.url, data.fields));
         i++;
     })
     try {
