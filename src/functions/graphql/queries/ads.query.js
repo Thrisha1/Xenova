@@ -7,7 +7,7 @@ export const GET_ADS = gql`
         id
         expiry
         description
-        s3 {
+        s3_url {
           url
         }
         price

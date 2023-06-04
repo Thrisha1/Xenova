@@ -2,15 +2,24 @@
 import React from 'react'
 import Link from 'next/link'
 import Ad_card from '../Ad_card'
-
 import { useAppSelector, useAppDispatch } from "../../redux/hooks.jsx";
-import { GET_ADS } from "../../functions/graphql/queries/ads.query";
-import { useQuery } from "@apollo/client";
+import { useQuery, useMutation } from "@apollo/client";
+import { GET_ADS, GET_SHARED } from "@/functions/graphql/queries/ads.query";
 
 const Hero = () => {
-  const { loading, error, data } = useQuery(GET_ADS);
+  //Get all ads
+  const {
+    loading: ads_loading,
+    error: ads_error,
+    data: ads_data,
+} = useQuery(GET_ADS);
   const adShow = useAppSelector((state) => state.ad.ads);
-  console.log(data);
+
+
+  if (ads_loading)
+  {
+    return <div>Loading...</div>
+  }
   return (
     <div>
       <section className="min-h-[200px] flex">
@@ -21,14 +30,14 @@ const Hero = () => {
             </h1>
           </div>
 
-          {adShow.length > 0 ? (
-            adShow.map((ad) => (
+          {(ads_data && ads_data.ads.length > 0) ? (
+            ads_data.ads.map((ad) => (
               <Ad_card
-                adId={ad.adId}
-                imageSrc={ad.imageSrc}
-                desc={ad.desc}
-                Amt={ad.Amt}
-                link={ad.link}
+                adId={ad.id}
+                imageSrc={ad.s3_url.url}
+                desc={ad.description}
+                Amt={ad.price}
+                link={ad.url}
               />
             ))
           ) : (
