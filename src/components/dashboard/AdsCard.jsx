@@ -3,6 +3,9 @@ import Link from 'next/link'
 import React from 'react'
 
 const AdsCard = ({adId, imageSrc, desc, Amt }) => {
+
+    console.log(imageSrc)
+
     return (
         <div class="min-w-[16rem] bg-gradient-to-bl from-yellow-200 from-0% via-[#D3E854] via-60% to-black to-100%border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex-col justify-center items-center">
             <Link href={`/dashboard/${adId}`}>
