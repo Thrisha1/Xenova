@@ -34,10 +34,10 @@ const Hero = () => {
             ads_data.ads.map((ad) => (
               <Ad_card
                 adId={ad.id}
-                imageSrc={ad.s3.url}
+                imageSrc={ad.s3_url.url}
                 desc={ad.description}
                 Amt={ad.price}
-                link={ad.s3.url}
+                link={ad.url}
               />
             ))
           ) : (

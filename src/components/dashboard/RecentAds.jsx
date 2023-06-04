@@ -47,7 +47,7 @@ const RecentAds = () => {
                         ?
 
                         (ads_data.ads.map(ad =>
-                            <AdsCard adId={ad.id} imageSrc={ad.s3.url} desc={ad.description} Amt={ad.price} />
+                            <AdsCard adId={ad.id} imageSrc={ad.s3_url.url} desc={ad.description} Amt={ad.price} />
                         ))
 
                         :
