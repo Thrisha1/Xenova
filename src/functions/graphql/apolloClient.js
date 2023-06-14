@@ -95,9 +95,9 @@ const graphQLClient = () =>
       typePolicies: {
         Query: {
           fields: {
-            show_nearby_properties: offsetLimitPagination(),
-            search_property: offsetLimitPagination(),
-            property: offsetLimitPagination()
+            // show_nearby_properties: offsetLimitPagination(),
+            // search_property: offsetLimitPagination(),
+            // property: offsetLimitPagination()
           }
         }
       }

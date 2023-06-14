@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBQd7DiES1LM-PPqerte6YQikBjT_NVWmQ",
-  authDomain: "xenova-e0103.firebaseapp.com",
-  projectId: "xenova-e0103",
-  storageBucket: "xenova-e0103.appspot.com",
-  messagingSenderId: "237340940784",
-  appId: "1:237340940784:web:743f16a3d33c0704dd6535"
+  apiKey: "AIzaSyD0hHL7hq3jQ4cc7lnAugiuE8nxy8esdVY",
+  authDomain: "xenova-f63a9.firebaseapp.com",
+  projectId: "xenova-f63a9",
+  storageBucket: "xenova-f63a9.appspot.com",
+  messagingSenderId: "633360192051",
+  appId: "1:633360192051:web:aadf543d9351ca6dfd0946"
 };
 
 // Initialize Firebase
