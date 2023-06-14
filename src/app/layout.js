@@ -7,6 +7,10 @@ import Footer_common from "../components/Footer_common.jsx"
 import './globals.css'
 import { ApolloProvider } from '@apollo/client'
 import graphQLClient from '../functions/graphql/apolloClient';
+import useFirebaseAuth from '../functions/auth/useFirebaseAuth'
+import { Bars } from 'react-loader-spinner'
+import Center from '../components/utils/Center'
+import { UserContext } from '../functions/auth/userContext'
 
 const metadata = {
   title: 'Next.js',
@@ -15,16 +19,31 @@ const metadata = {
 
 export default function RootLayout({ children }) {
   const client = graphQLClient();
+  const { user, loading } = useFirebaseAuth()
+  React.useEffect(()=>{
+    console.log(user)
+  }, [user])
   return (
     <html lang="en">
       <body className=" ">
-        <ApolloProvider client={client}>
-          <Providers>
-            <Header />
-            {children}
-            <Footer_common />
-          </Providers>
-        </ApolloProvider>
+        {loading ?
+          <Center>
+            <Bars
+              width='200'
+              color="#4fa94d"
+            />
+          </Center>
+          :
+          <UserContext.Provider value={user}>
+            <ApolloProvider client={client}>
+              <Providers>
+                <Header />
+                {children}
+                <Footer_common />
+              </Providers>
+            </ApolloProvider>
+          </UserContext.Provider>
+        }
       </body>
     </html>
   )

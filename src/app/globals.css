@@ -4,10 +4,12 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
   background-color: rgb(232, 232, 232);
+  height: 100%;
 }
 /* :root {
   --foreground-rgb: 0, 0, 0;
